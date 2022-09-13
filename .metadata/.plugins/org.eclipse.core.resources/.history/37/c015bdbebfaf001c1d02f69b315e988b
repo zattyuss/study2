@@ -1,0 +1,22 @@
+package ex01;
+
+public class AAA {
+	
+	class BBB{
+		
+	}
+	
+	static class CCC{
+		
+	}
+	
+	void methodA() {
+		class DDD{
+			
+		}
+	}
+	
+	
+	
+	
+}

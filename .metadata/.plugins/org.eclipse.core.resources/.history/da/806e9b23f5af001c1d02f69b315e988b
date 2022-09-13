@@ -1,0 +1,23 @@
+package dao;
+
+import java.util.List;
+
+import model.Member;
+
+public interface IMemberDao {
+
+	public List<Member> memberList();
+	
+	public abstract Member selectById();
+	
+	public List<Member> selectByName(String name);
+	
+	public void insert(Member meber);
+	
+	 void delete(int id);
+	
+	void update(int id, String email);
+	
+	
+	
+}

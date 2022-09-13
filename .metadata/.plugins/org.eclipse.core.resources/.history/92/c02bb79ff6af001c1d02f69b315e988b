@@ -1,0 +1,56 @@
+package dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import model.Member;
+
+public class MemberDao implements IMemberDao {
+
+	private List<Member> memberList = new ArrayList<Member>();
+	
+	public MemberDao() {
+		memberList.add(new Member(1, "È«±æµ¿", "234", "12342314@naver.com"));
+		memberList.add(new Member(2, "±è±æµ¿", "234", "23423@naver.com"));
+		memberList.add(new Member(3, "ÀÌ±æµ¿", "234", "123145@naver.com"));
+		memberList.add(new Member(4, "Àö±æµ¿", "234", "345342314@naver.com"));
+		memberList.add(new Member(5, "Á¶±æµ¿", "234", "765534534@naver.com"));
+	}
+	
+	
+	
+	@Override
+	public List<Member> memberList() {
+		
+		return memberList;
+	}
+
+	@Override
+	public Member selectById(int id) {
+		
+		return null;
+	}
+
+	@Override
+	public List<Member> selectByName(String name) {
+		
+		return null;
+	}
+
+	@Override
+	public void insert(Member meber) {
+	}
+
+	@Override
+	public void delete(int id) {
+	}
+
+	@Override
+	public void update(int id, String email) {
+	}
+
+	
+
+	
+	
+}

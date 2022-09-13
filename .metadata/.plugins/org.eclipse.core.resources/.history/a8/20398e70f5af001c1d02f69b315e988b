@@ -1,0 +1,43 @@
+package dao;
+
+import java.util.List;
+
+import model.Member;
+
+public class MemberDao implements IMemberDao {
+
+	@Override
+	public List<Member> memberList() {
+		
+		return null;
+	}
+
+	@Override
+	public Member selectById(int id) {
+		
+		return null;
+	}
+
+	@Override
+	public List<Member> selectByName(String name) {
+		
+		return null;
+	}
+
+	@Override
+	public void insert(Member meber) {
+	}
+
+	@Override
+	public void delete(int id) {
+	}
+
+	@Override
+	public void update(int id, String email) {
+	}
+
+	
+
+	
+	
+}

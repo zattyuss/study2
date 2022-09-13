@@ -1,0 +1,27 @@
+spackage service;
+
+import dao.MemberDao;
+
+public class MemberService {
+
+	private MemberDao dao;
+	
+	public MemberService() {}
+	public MemberService(MemberDao dao) {
+		this.dao = dao;
+	}
+
+	
+	
+	public void setDao(MemberDao dao) {
+		this.dao = dao;
+	}
+	public void findAll() {
+		System.out.println("파인드 올 호출");
+		dao.selectAll();
+	}
+
+	
+
+	
+}

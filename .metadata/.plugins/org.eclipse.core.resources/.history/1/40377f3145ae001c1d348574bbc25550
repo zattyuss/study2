@@ -1,0 +1,77 @@
+package controller;
+
+import java.util.List;
+import java.util.Scanner;
+
+import model.Member;
+import service.MemberService;
+
+public class MemberController {
+	Scanner scan = new Scanner(System.in);
+	String command;
+	
+	
+	
+	private MemberService service;
+
+	public MemberController(MemberService service) {
+		this.service = service;
+	}
+	
+	public void run() {
+		help();
+		while(true) {
+			System.out.println(">> 메뉴선택");
+			command = scan.nextLine();
+			
+			switch (command) {
+			case "0":
+				System.out.println("종료");
+				break;
+			case "1":
+				System.out.println("회원가입");
+				break;
+			case "2":
+				System.out.println("회원정보조회");
+				service.findById(1);
+				System.out.println(member.getName());
+				break;
+			case "3":
+				System.out.println("회원정보수정");
+				break;
+			case "4":
+				// 모든 회원정보 조회
+				List<Member> memberList = service.memberList();
+				printInfo(memberList);
+				break;
+			default:
+				help();
+				break;
+			}
+			
+		}
+//		List<Member> memberList = service.memberList();
+		
+	}
+
+	private void help() {
+		System.out.println("=-=================");
+		System.out.println("프로그램 종료 : 0");
+		System.out.println("회원 가입 : 1");
+		System.out.println("회원정보조회 : 2");
+		System.out.println("회원정보수정 : 3");		
+		System.out.println("모든회원정보조회 : 4");
+		System.out.println("=======================");
+	}
+
+	private void printInfo(List<Member> memberList) {
+		for(Member member : memberList) {
+			System.out.println("=====================");
+			System.out.println("회원 번호 : " +member.getId() );
+			System.out.println("회원 이름 : " + member.getName());
+			System.out.println("비밀번호 : " + member.getPassword());
+			System.out.println("이메일 : " + member.getEmail());
+		}
+	}
+	
+}

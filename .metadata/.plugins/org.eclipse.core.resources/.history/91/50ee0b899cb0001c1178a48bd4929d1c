@@ -1,0 +1,11 @@
+package ex06;
+
+public interface MemberDao {
+	void selectAll();
+//	x06.MemberDaoByMySQL
+//	x06.MemberDaoByMySQL
+	String ORACLE_DB = "ex06.MemberDaoOracle";
+	String MYSQL_DB = "ex06.MemberDaoByMySQL";
+	
+	
+}

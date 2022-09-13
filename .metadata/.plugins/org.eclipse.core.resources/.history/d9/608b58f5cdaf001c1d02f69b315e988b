@@ -1,0 +1,8 @@
+package ex04;
+
+public class AAA {
+	
+	void methodA() {
+		System.out.println("클래스AAA : methodA 호출");
+	}
+}

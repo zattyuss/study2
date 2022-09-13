@@ -1,0 +1,30 @@
+package service;
+
+import java.util.List;
+
+import dao.MemberDao;
+import model.Member;
+
+public class MemberService {
+
+	private MemberDao dao;
+
+	public MemberService(MemberDao dao) {
+		this.dao = dao;
+	}
+
+	public List<Member> findAll(){
+		return dao.memberList();
+	}
+	
+	public Member findById(int id) {
+		try {
+			Member findMember = dao.selectById(id);
+			
+		} catch (FoundNotMember e) {
+			
+		}
+		return findMember;
+	}
+	
+}

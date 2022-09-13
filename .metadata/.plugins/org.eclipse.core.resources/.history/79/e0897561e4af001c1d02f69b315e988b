@@ -1,0 +1,20 @@
+package ex10;
+
+public class AAA {
+	
+	void methodA(int aaa1) { // 지역변수(매개변수)
+		int aaa2 = 100; // 지역변수
+		class DDD { // 로컬클래스
+			void methodB() {
+				System.out.println(aaa1);
+				System.out.println(aaa2);
+				aaa1 = 660;
+				aaa2 = 700;
+				
+				
+				
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+package tese1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test7 {
+	public static void main(String[] args) {
+		List<Apple> apples = new ArrayList<Apple>();
+		Apple apple1 = new Apple();
+		Apple apple2 = new Apple();
+		apples.add(apple1);
+		apples.add(apple2);
+		
+		Orange orange1 = new Orange("¿À·»Áö1")
+		
+	}
+	
+}
+	
+	
+	class Fruit{}
+	class Apple{}
+	class Orange extends Fruit{
+		String name;
+		public Orange(String name) {
+			this.name = name;
+	}
+}
+

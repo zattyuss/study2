@@ -1,0 +1,16 @@
+package app;
+
+import controller.MemberController;
+import dao.MemberDao;
+import service.MemberService;
+
+public class AppMain {
+	public static void main(String[] args) {
+		MemberDao dao = new MemberDao();
+		MemberService service = new MemberService();
+		MemberController controller = new MemberController();
+		controller.run();
+		System.out.println("메인메소드 종료");
+		
+	}
+}

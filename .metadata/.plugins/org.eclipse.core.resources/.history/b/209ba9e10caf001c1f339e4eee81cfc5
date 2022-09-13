@@ -1,0 +1,16 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import model.Member;
+
+public class Test3 {
+	public static void main(String[] args) {
+		Member member1 = new Member(1, "ȫ�浿1", "51241", "hong@naver.com");
+		
+		List<Member> memberList = new ArrayList<Member>();
+		memberList.add(member1);
+		System.out.println(memberList);
+	}
+}

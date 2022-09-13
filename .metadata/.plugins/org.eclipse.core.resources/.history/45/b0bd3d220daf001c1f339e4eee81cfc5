@@ -1,0 +1,18 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import model.Member;
+
+public class Test3 {
+	public static void main(String[] args) {
+		Member member1 = new Member(1, "ȫ�浿1", "51241", "hong1@naver.com");
+		
+		List<Member> memberList = new ArrayList<Member>();
+		memberList.add(member1);
+		memberList.add(new Member(2, "ȫ�浿2", "2135", "hong2@naver.com"));
+		memberList.add(new Member(3, "ȫ�浿3", "3135", "hong3@naver.com"));
+		System.out.println(memberList);
+	}
+}

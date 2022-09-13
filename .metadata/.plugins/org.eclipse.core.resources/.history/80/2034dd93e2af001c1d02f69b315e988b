@@ -1,0 +1,14 @@
+package dynamic_beat_2;
+
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+
+public class Music extends Thread {
+	
+	
+	private boolean isLoop;
+	private File file;
+	private FileInputStream fis;
+	private BufferedInputStream bis;
+}

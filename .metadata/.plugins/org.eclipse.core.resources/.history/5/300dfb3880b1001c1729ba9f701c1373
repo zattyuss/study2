@@ -1,0 +1,115 @@
+package controller;
+
+import java.util.List;
+import java.util.Scanner;
+
+import dao.NotFoundMemberException;
+import model.Member;
+import service.MemberService;
+
+public class MemberController {
+
+	private MemberService service;
+	private String command;
+	private Scanner scan = new Scanner(System.in);
+
+	public MemberController() {
+	}
+
+	public void setService(MemberService service) {
+		this.service = service;
+	}
+
+	public void setScan(Scanner scan) {
+		this.scan = scan;
+	}
+
+	public MemberController(MemberService service) {
+		this.service = service;
+	}
+
+	public void run() {
+
+		while (true) {
+			help();
+			System.out.println(">> 메뉴선택 : ");
+			command = scan.nextLine();
+			switch (command) {
+			case "0":
+				System.out.println("프로그램 종료");
+				return; // 종료는 리턴
+			case "1":
+				System.out.println("모든 회원정보 조회");
+				List<Member> memberList = service.findAll();
+				printInfo(memberList);
+				break;
+			case "2":
+				proceedFindMemberById();
+				break;
+			case "3":
+				while (true) {
+					try {
+						System.out.println("회원 이름을 입력하세요 : ");
+						String inputName = scan.nextLine();
+						if (inputName.equals("이전")) {
+							break;
+						}
+						List<Member> members = service.findByName(inputName);
+						printInfo(members);
+					} catch (NotFoundMemberException e) {
+						System.out.println(e.getMessage());
+					}
+				}
+				break;
+			default:
+				System.out.println("올바른 값을 입력하세요.");
+				help();
+				break;
+			}
+		}
+	}
+
+	private void proceedFindMemberById() {
+		while (true) {
+			try {
+				System.out.println(">>회원 번호를 입력하세요 : ");
+				String inputId = scan.nextLine();
+				if (inputId.equals("이전")) {
+					break;
+				}
+				int id = Integer.parseInt(inputId);
+				Member member = service.findById(id);
+				printInfo(member);
+			} catch (NotFoundMemberException e) {
+				System.out.println(e.getMessage());
+			} catch (NumberFormatException e) {
+				System.out.println("숫자로 입력하세요");
+			}
+		}
+	}
+
+	private void printInfo(Member member) {
+		System.out.println("==================================");
+		System.out.println("회원번호 : " + member.getId());
+		System.out.println("회원이름 : " + member.getName());
+		System.out.println("회원이메일 : " + member.getEmail());
+	}
+
+	private void printInfo(List<Member> memberList) {
+		for (Member m : memberList) {
+			System.out.println("==================================");
+			System.out.println("회원번호 : " + m.getId());
+			System.out.println("회원이름 : " + m.getName());
+			System.out.println("회원이메일 : " + m.getEmail());
+		}
+	}
+
+	private void help() {
+		System.out.println("==================================");
+		System.out.println("0. 프로그램 종료");
+		System.out.println("1. 모든 회원정보 조회");
+		System.out.println("2. 개발중");
+		System.out.println("==================================");
+	}
+
+}

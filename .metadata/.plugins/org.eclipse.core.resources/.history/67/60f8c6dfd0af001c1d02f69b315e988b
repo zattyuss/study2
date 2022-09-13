@@ -1,0 +1,22 @@
+package ex05;
+
+public class AAA {
+	
+	
+	
+	
+	
+	class BBB{  // 인스턴스 멤버 클래스
+		public BBB(String message) {
+			System.out.println("인스턴스 멤버 클래스 BBB 객체 생성 : " + message);
+		}
+	}
+	
+	static class CCC{ // 스태틱 멤버 클래스
+		public CCC(String message) {
+			System.out.println("스태틱 멤버 클래스 CCC 객체 생성 : " + message);
+		}
+	}
+	
+	
+}

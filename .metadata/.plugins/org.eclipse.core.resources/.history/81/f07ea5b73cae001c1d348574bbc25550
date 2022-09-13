@@ -1,0 +1,6 @@
+package dao;
+
+public class MemberDao {
+	
+	List<Member> memberList = new ArrayList<Member>();
+}

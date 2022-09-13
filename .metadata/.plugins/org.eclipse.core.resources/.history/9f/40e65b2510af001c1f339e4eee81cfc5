@@ -1,0 +1,22 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import model.Member;
+
+public class Tese4 {
+	public static void main(String[] args) {
+		List<Member> members = new ArrayList<Member>();
+		
+		Member member1 = new Member(1, "피곤하다", "진짜", "하");
+		Member member3 = new Member(2, "조퇴할까", "진짜", "하");
+		Member member2 = new Member(22, "집 가고싶다", "진짜", "하");
+		
+		int size = memberList.size();
+		
+		
+		
+		
+	}
+}

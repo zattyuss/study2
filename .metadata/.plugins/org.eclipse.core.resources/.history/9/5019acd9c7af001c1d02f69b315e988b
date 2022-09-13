@@ -1,0 +1,16 @@
+package ex02;
+
+public class AAADemo {
+	public static void main(String[] args) {
+		System.out.println("(Á¤)»ó¼ö : " + AAA.BBB.CC);
+		
+		AAA aaa = new AAA();
+		
+		
+		
+		
+		
+		
+		
+	}
+}

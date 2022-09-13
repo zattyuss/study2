@@ -1,0 +1,10 @@
+package dao;
+
+public class MemberDao {
+
+	public void selectAll() {
+		System.out.println("DAO : selectAll »£√‚");
+	}
+	
+	
+}

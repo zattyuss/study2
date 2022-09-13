@@ -1,0 +1,9 @@
+package ex02;
+
+public class MemberMain {
+	public static void main(String[] args) {
+		MemberDao dao = new MemberDao();
+		
+		Member findMember = dao.findById(100);
+	}
+}

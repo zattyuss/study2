@@ -1,0 +1,29 @@
+package ex03;
+
+public class AAA {
+	
+	// 정적 멤버 클래스
+	static class CCC{
+		int ccc; // 필드 변수
+		static int ccc2; // 스태틱 필드 변수
+		public static final int CONT_CCC = 1000; // 상수 필드
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

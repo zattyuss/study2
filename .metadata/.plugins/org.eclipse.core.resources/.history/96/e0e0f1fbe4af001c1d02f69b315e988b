@@ -1,0 +1,17 @@
+package ex11;
+
+public class AAA {
+	String str = "AAA클래스 인스턴스 필드 변수";
+	
+	class BBB{ // 인스턴스 멤버 클래스
+		String str = "BBB클래스 인스턴스 필드 변수";
+		
+		void print() {
+			System.out.println(str);
+		}
+	}
+	public static void main(String[] args) {
+		AAA aaa = new AAA();
+		BBB bbb = aaa.new BBB();
+	}
+}

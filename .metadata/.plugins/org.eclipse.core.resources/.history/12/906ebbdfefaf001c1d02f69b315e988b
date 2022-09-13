@@ -1,0 +1,10 @@
+package service;
+
+import dao.MemberDao;
+
+public class MemberService {
+
+	public MemberService(MemberDao dao) {
+	}
+
+}

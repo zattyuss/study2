@@ -1,0 +1,14 @@
+package ex01;
+
+import java.util.Arrays;
+
+public class Example01 {
+	public static void main(String[] args) {
+		String[] arr1 = {"È«","±æ","µ¿","Àü"};
+		System.out.println(arr1);
+		String string = Arrays.toString(arr1);
+		
+		String arr1ToString;
+		System.out.println(Arrays.toString(arr1));
+	}
+}

@@ -1,0 +1,15 @@
+package ex02;
+
+import java.util.List;
+
+public class MemberDao {
+
+		private List<Member> memberList = new ArrayList<Member>();
+		
+		public MemberDao() {
+			memberList.add(new Member(1, "梯團熱"));
+			memberList.add(new Member(1, "夢團熱"));
+			memberList.add(new Member(1, "曄團熱"));
+			memberList.add(new Member(1, "糎團熱"));
+		}
+}

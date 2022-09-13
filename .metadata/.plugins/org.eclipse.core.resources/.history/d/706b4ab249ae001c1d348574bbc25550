@@ -1,0 +1,8 @@
+package common;
+
+public class FoundNotMemberId extends RunTimeException {
+	
+	public FoundNotMemberId(String message) {
+		super(message);
+	}
+}

@@ -1,0 +1,35 @@
+package controller;
+
+import java.util.Scanner;
+
+import service.MemberService;
+
+public class MemberController {
+	private MemberService service;
+	private Scanner scan = new Scanner(System.in);
+	private String command;
+	
+	
+	public MemberController(MemberService service) {
+		this.service = service;
+	}
+
+	public void run() {
+		System.out.println("실행");
+		while(true) {
+			System.out.println(">> 메뉴선택 : ");
+			command = scan.nextLine();
+			switch (command) {
+			case "0":
+				System.out.println("프로그램 종료");
+				break;
+			case "1":
+				System.out.println("모든회원정보조회");
+				break;	
+			default:
+				break;
+			}
+		}
+	}
+
+}

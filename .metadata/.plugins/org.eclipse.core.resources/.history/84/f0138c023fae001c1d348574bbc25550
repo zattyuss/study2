@@ -1,0 +1,18 @@
+package controller;
+
+import model.Member;
+import service.MemberService;
+
+public class MemberController {
+		
+	MemberService service;
+
+	public MemberController(MemberService service) {
+		this.service = service;
+	}
+	public void run() {
+		List<Member> memberLsit = service.memberLsit();
+		System.out.println(memberList);
+	}
+	
+}

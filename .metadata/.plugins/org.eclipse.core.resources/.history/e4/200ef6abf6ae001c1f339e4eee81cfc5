@@ -1,0 +1,9 @@
+package common;
+
+public class FoundNotMember extends Exception {
+
+	public FoundNotMember(String message) {
+		super(message);
+	}
+
+}

@@ -1,0 +1,20 @@
+package ex05;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MemberDemo {
+	public static void main(String[] args) {
+		Member member1 = new Member(1, "ÀÌ¸í¹Ú");
+		Member member2 = new Member(1, "¹ÚÁ¤Èñ");
+		Member member3 = new Member(1, "À±¼®¿­");
+		
+		Map<Member, String> map = new HashMap<Member, String>();
+		map.put(member1, "ÇÑ³ª¶ó´ç");
+		map.put(member2, "±¹¹ÎÀÇ Èû");
+		map.put(member3, "±¹¹ÎÀÇ Èû");
+		
+		
+		
+	}
+}

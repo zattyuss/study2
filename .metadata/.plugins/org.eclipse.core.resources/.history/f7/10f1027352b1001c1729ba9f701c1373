@@ -1,0 +1,8 @@
+package ex01;
+
+public class Example01 {
+	public static void main(String[] args) {
+		String[] arr1 = {"È«","±æ","µ¿","Àü"};
+		System.out.println(arr1);
+	}
+}

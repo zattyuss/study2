@@ -1,0 +1,10 @@
+package ex02;
+
+public class NotFoundMember extends RuntimeException {
+
+	public NotFoundMember(String string) {
+		super(message);
+	}
+
+		
+}
