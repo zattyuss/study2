@@ -1,7 +1,0 @@
-package ex03;
-
-public class AAADemo {
-	public static void main(String[] args) {
-		System.out.println(AAA.CCC.ccc2);
-	}
-}

@@ -1,8 +1,0 @@
-package ex04;
-
-public class MemberDemo {
-	public static void main(String[] args) {
-		Member member1 = new Member(1, "È«±æµ¿", "adfsdfa");
-		Address address = new Address("°í·É±º", "´ë°¡¾ßÀ¾", "40136")
-	}
-}

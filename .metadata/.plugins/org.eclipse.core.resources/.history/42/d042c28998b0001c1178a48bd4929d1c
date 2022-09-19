@@ -1,8 +1,0 @@
-package ex06;
-
-public class MemberDaoMain {
-	public static void main(String[] args) {
-//		MemberDao dao = new MemberDaoByMySQL();
-		MemberDao dao = new MemberDaoOracle();
-	}
-}

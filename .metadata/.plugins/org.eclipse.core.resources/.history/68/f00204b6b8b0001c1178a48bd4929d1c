@@ -1,5 +1,0 @@
-package dao;
-
-public class NotFoundMemberException extends Exception {
-
-}

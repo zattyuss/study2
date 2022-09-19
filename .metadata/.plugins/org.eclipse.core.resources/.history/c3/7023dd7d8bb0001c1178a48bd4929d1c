@@ -1,6 +1,0 @@
-package ex02;
-
-public class NotFoundMember extends RuntimeException {
-
-		
-}

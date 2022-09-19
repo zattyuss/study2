@@ -1,5 +1,0 @@
-package common;
-
-public class FoundNotMemberId extends Exception {
-	public FoundNotMemberId(String String);
-}
